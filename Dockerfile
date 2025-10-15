@@ -1,5 +1,5 @@
-FROM openjdk:11-slim
+FROM openjdk:17
 WORKDIR /app
-COPY . .
+COPY Samplename.java /app
 RUN javac Samplename.java
 CMD ["java", "Samplename"]
